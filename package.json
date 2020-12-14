@@ -1,0 +1,10 @@
+{
+  "name": "equation-slides",
+  "description": "Equation Slides package for scripts",
+  "scripts": {
+    "build": "bash package.sh",
+    "dev": "bash package.sh --no-zip"
+  },
+  "author": "Yash Singh",
+  "license": "MIT"
+}
