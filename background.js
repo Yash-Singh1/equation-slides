@@ -6,9 +6,9 @@ chrome.runtime.onInstalled.addListener(function () {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {
-              hostEquals: "docs.google.com",
-              schemes: ["https", "http"],
-              pathPrefix: "/presentation/d",
+              hostEquals: 'docs.google.com',
+              schemes: ['https', 'http'],
+              pathPrefix: '/presentation/d',
             },
           }),
         ],
@@ -18,4 +18,4 @@ chrome.runtime.onInstalled.addListener(function () {
   });
 });
 
-console.log("Welcome to equation-slides!");
+console.log('Welcome to equation-slides!');
