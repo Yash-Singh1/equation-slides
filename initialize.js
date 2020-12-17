@@ -65,8 +65,11 @@
   ).onpaste = async function (event) {
     let input = document.querySelector('.picker-urlview-inner-input');
     if (
-      (input.value[0] === '`' && input.value[input.value.length - 1] === '`') ||
-      (input.value[0] === '$' && input.value[input.value.length - 1] === '$')
+      ((input.value[0] === '`' &&
+        input.value[input.value.length - 1] === '`') ||
+        (input.value[0] === '$' &&
+          input.value[input.value.length - 1] === '$')) &&
+      input.value.length > 2
     ) {
       event.preventDefault();
       input.value =
