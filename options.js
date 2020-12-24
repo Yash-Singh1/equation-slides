@@ -1,3 +1,7 @@
+function byId(id) {
+  return document.getElementById(id);
+}
+
 chrome.storage.sync.get('quality', function (data) {
   byId('myRange').value = data.quality;
   byId('value').value = data.quality;

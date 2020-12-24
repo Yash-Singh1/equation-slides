@@ -2,8 +2,7 @@ if (
   document.querySelector('.picker-urlview') !== null &&
   (document.querySelector('.picker-urlview-convertButton') !== null &&
     document.getElementById('--equation-slides-style') !== null &&
-    typeof document.querySelector('.picker-urlview-inner-input').onpaste ===
-      'function') === false
+    typeof document.querySelector('.picker-urlview-inner-input').onpaste === 'function') === false
 ) {
 } else {
   document.getElementsByClassName('picker-urlview-convertButton')[0].remove();

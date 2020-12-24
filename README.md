@@ -30,3 +30,7 @@ Starting up in the development environment:
 2. Open up `chrome://extensions` in `google-chrome`
 3. Make sure developer mode is turned on
 4. Click on Load Unpacked and select the `dist/` folder at the root of this repository
+
+## Contributing
+
+This repository loves contributions!

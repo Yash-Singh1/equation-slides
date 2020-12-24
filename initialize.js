@@ -1,8 +1,6 @@
 (() => {
   let getFromStorage = (keys) =>
-    new Promise((resolve, reject) =>
-      chrome.storage.sync.get(keys, (result) => resolve(result))
-    );
+    new Promise((resolve, reject) => chrome.storage.sync.get(keys, (result) => resolve(result)));
 
   let style = document.createElement('style');
 
@@ -60,15 +58,11 @@
         'body > div.google-url-picker.modal-dialog > div.picker-urlview-actionbar > button.picker-urlview-cancelbutton'
       )
     );
-  document.querySelector(
-    '.picker-urlview-inner-input'
-  ).onpaste = async function (event) {
+  document.querySelector('.picker-urlview-inner-input').onpaste = async function (event) {
     let input = document.querySelector('.picker-urlview-inner-input');
     if (
-      ((input.value[0] === '`' &&
-        input.value[input.value.length - 1] === '`') ||
-        (input.value[0] === '$' &&
-          input.value[input.value.length - 1] === '$')) &&
+      ((input.value[0] === '`' && input.value[input.value.length - 1] === '`') ||
+        (input.value[0] === '$' && input.value[input.value.length - 1] === '$')) &&
       input.value.length > 2
     ) {
       event.preventDefault();
@@ -77,9 +71,7 @@
         (await getFromStorage('quality')).quality +
         '}&space;' +
         encodeURI(input.value.substring(1, input.value.length - 1));
-      document.getElementsByClassName(
-        'picker-urlview-error-container'
-      )[0].innerHTML = '';
+      document.getElementsByClassName('picker-urlview-error-container')[0].innerHTML = '';
     }
   };
 })();

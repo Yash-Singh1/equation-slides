@@ -3,7 +3,8 @@
   "description": "Equation Slides package for scripts",
   "scripts": {
     "build": "bash package.sh",
-    "dev": "bash package.sh --no-zip"
+    "dev": "bash package.sh --no-zip",
+    "code-style": "prettier --write ./"
   },
   "author": "Yash Singh",
   "license": "MIT"
