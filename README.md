@@ -20,6 +20,10 @@ Here is an image of the new Insert Image By URL popup:
 
 If the `Equationify` button is pressed, then the equation will convert into a usable URL with the equation. Instead of typing in the equation and then pressing on the `Equationify` button, you can paste in \`x^2\` and it will automatically convert into a URL.
 
+### Settings
+
+To change the settings and options, go `chrome://extensions` and click on `Equation Slides Details > Extension Options`. This should open up a settings page similar to the popup page, but instead only for settings.
+
 ## Development
 
 **This assumes you have `npm` and `google-chrome` installed**
