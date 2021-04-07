@@ -1,4 +1,12 @@
-# `equation-slides`
+<!-- markdownlint-disable MD033 -->
+
+<h1 align="center">
+  <code>equation-slides</code>
+  <br />
+  <a href="https://chrome.google.com/webstore/detail/equation-slides/gckicjehagnonikeodfafohfpmjlkfip?hl=en-US">
+    <img alt="equation-slides users" src="https://img.shields.io/chrome-web-store/users/gckicjehagnonikeodfafohfpmjlkfip" />
+  </a>
+</h1>
 
 This is the repository for the Equation Slides chrome extension. It allows you to "Insert equations in Google Slides".
 
