@@ -1,6 +1,7 @@
 {
   "name": "equation-slides",
   "description": "Equation Slides package for scripts",
+  "version": "1.2",
   "scripts": {
     "build": "bash package.sh",
     "dev": "bash package.sh --no-zip",
